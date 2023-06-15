@@ -1,0 +1,97 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    left: 50px;
+    font-style: italic;
+}
+h3 {
+    font-size: 20px;
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+}
+ol {
+    list-style-type: none;
+}
+ul {
+    list-style-type: none;
+}
+img {
+    margin-bottom: 15px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-align: center;
+    position:relative;
+}
+.container > * {
+    padding: 10px;
+    margin: 2px;
+    flex: 1 100%;
+    border-radius: 10px;
+}
+.header {
+    background-color: darksalmon;
+    height: 220px;
+}
+.main {
+    text-align: left;
+    height: 1px;
+    font-size: 20px;
+    position: absolute;
+}
+.aside1 {
+    background-color: #ffd722;
+    height:250px;
+}
+.aside2 {
+    background-color:#5F021F;
+    color:white;
+    height: 250px;
+}
+.Qualities {
+   background-color: rgb(96, 186, 168); 
+   
+}
+.Interests {
+   background-color: rgb(197, 112, 218);
+   
+}
+.links {
+    background-color:darksalmon;
+    text-align: end;
+}
+@media all and (min-width:800px) {
+    .main {
+        flex: 4;
+    
+    }
+    .aside1 {
+        order: 1
+    }
+    .aside2 {
+        order: 2
+    }
+    .main {
+        order: 2
+    }
+    .Qualities {
+        order: 3
+    }
+    .Interests {
+        order: 4
+    }
+    .links {
+        order: 5
+    }
+
+}
+@media all and (min-width:600px) {
+    .aside {
+    flex: 1
+    }
+}

@@ -1,0 +1,42 @@
+h2{color:red;}
+h1{color:rgb(37, 37, 108)}
+.highlight {background-color:rgb(191, 255, 0);}
+#Reason {
+    background-color: aquamarine;
+    color: rgb(255, 64, 0);
+    padding: 10px;
+    font-size: 20px;
+}
+#box:checked + label {
+    outline: 3px solid green;
+}
+h3:hover {
+    font-style:normal;
+    color: blueviolet;
+}
+button {
+    color: brown;
+}
+#Twitter:visited {
+    color: pink;
+}
+#Twitter:active {
+    color: navy;
+}
+#Instagram:active + :visited {
+    color: rgb(179, 255, 0);
+}
+p {position:relative;
+}
+p::after {
+    content:"";
+    background-color: palegoldenrod;
+    height: 20px;
+    width:200px;
+    position:absolute;
+    left: 1px;
+    z-index: -1;
+}
+label::marker {
+    color: blue;
+}

@@ -1,13 +1,23 @@
 <title>Contac-me</title>
 <head>
-    <h1>Junior Software Developer</h1>
-<h2>I am Mario, a Junior Software Developer. I offer my service as a freelancer for 
-    independent projects.Please do not hesitate to ask for my portfolio where you can see my main projects.</h2>
+    <h1 class="highlight">Junior Software Developer</h1>
+   
+<p> I am Mario, a Junior Software Developer. I offer my service as a freelancer for 
+    independent projects.Please do not hesitate to ask for my portfolio where you can see my main projects.</p>
+    
 </head>
 <body>
+    <link rel="stylesheet" type="text/css" href="styles css">
+
+
+
     <form>
-        <fieldset>
-            <legend><h3>Personal details</h3></legend>
+
+        
+            <fieldset>
+                <br>
+                <legend><h3>Personal details</h3></legend>
+
             <label for="name">Name</label>
             <input id="name" type="text">
             <br>
@@ -18,7 +28,9 @@
         <br>
         <fieldset>
             <legend><h3>Contacting reason</h3></legend>
+            <div id="Reason">
             <label for="name">Reason:</label>
+            </div>
             <select name="reason">
                 <option value="new project">New projects</option>
                 <option value="improvements">improvements</option>
@@ -34,6 +46,14 @@
         </fieldset>
 
     </form>
-   
+    <div id="“socials”">
+        <h3>My Socials</h3>
+        <p id="Twitter">Follow me on <a  href="">Twitter</a>!</p>
+        <p id="Instagram">Follow me on <a href="">Instagram</a>!</p>
+        <input type="checkbox" id="box" name="test-checkbox" checked />
+        <label for="test-checkbox">Check this box for some reason</label>
+        <button>You can't press this...</button>
+      </div>
+      
 </body>
 
